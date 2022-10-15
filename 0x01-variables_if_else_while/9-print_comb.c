@@ -13,8 +13,6 @@ int main(void)
 	while (n <= '9') /*print 0-9*/
 	{
 	    
-		if (n == 9)
-			continue;
 		putchar(n);
 		putchar(',');
 		putchar(' ');
