@@ -7,19 +7,19 @@
 
 int main(void)
 {
-	int num;
+	int n = '0';
+ 
 
-	for (num = 0; num <= 9; num++)
+	while (n <= '9') /*print 0-9*/
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
+	    
+		if (n == 9)
 			continue;
-		
+		putchar(n);
 		putchar(',');
 		putchar(' ');
+		n++;
 	}
-
-	putchar('\n');
 
 	return (0);
 }
