@@ -7,12 +7,16 @@
 
 int main(void)
 {
-	int n = '0';
+	int num;
 
-	while (n <= '9') /*print 0-9*/
+	for (num = 0; num <= 9; num++)
 	{
-		putchar("%d,",n);
-		n++;
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		
+		putchar(',');
+		putchar(' ');
 	}
 
 	putchar('\n');
