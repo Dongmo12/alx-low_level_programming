@@ -11,7 +11,7 @@ int main(void)
 
 	while (n <= '9') /*print 0-9*/
 	{
-		putchar("%d, ",n);
+		putchar("%d,",n);
 		n++;
 	}
 
