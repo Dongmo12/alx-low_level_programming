@@ -1,18 +1,13 @@
 #include <unistd.h>
-
 #include "main.h"
-
-
 
 /**
  *
- * * print_alphabet - prints the alphabets
+ * print_alphabet - prints the alphabets
  *
- * *
+ * Return: returns 0
  *
- * * Return: returns 0
- *
- * */
+ */
 
 
 
