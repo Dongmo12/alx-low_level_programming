@@ -1,73 +1,60 @@
 #include "main.h"
 
-
-
 /**
- *
- * * print_number - function that prints an integer
+ * print_number - function that prints an integer
  *
  * * @n: input value to check
  *
  * * Return: nothing.
  *
- * */
+ */
 
+void print_number(int n) {
 
+  unsigned int num, num2;
 
-void print_number(int n)
+  int i;
 
-{
+  int aux = 1;
 
-		unsigned int num, num2;
+  if (n < 0)
 
-			int i;
+  {
 
-				int aux = 1;
+    n = n * -1;
 
+    _putchar('-');
 
+  }
 
-					if (n < 0)
+  num = n;
 
-							{
+  num2 = num;
 
-										n = n * -1;
+  if (num > 9)
 
-												_putchar('-');
+  {
 
-													}
+    while (num >= 10)
 
-						num = n;
+    {
 
-							num2 = num;
+      aux = aux * 10;
 
-								if (num > 9)
+      num = num / 10;
 
-										{
+    }
 
-													while (num >= 10)
+    _putchar((num2 / aux) + '0');
 
-																{
+    aux = aux / 10;
 
-																				aux = aux * 10;
+    for (i = aux; i >= 1; i = i / 10)
 
-																							num = num / 10;
+      _putchar((num2 / i) % 10 + '0');
 
-																									}
+  } else
 
-															_putchar((num2 / aux) + '0');
-
-																	aux = aux / 10;
-
-
-
-																			for (i = aux; i >= 1; i = i / 10)
-
-																						_putchar((num2 / i) % 10 + '0');
-
-																				}
-
-										else
-
-													_putchar(num + '0');
+    _putchar(num + '0');
 
 }
