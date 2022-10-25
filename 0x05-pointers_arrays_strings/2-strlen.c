@@ -3,17 +3,15 @@
 
 
 /**
- *
  *  * _strlen - check the code for Holberton School students.
  *
  *   * @s: Inputted string pointer
  *
  *    * Return: Always 0.
  *
- *     */
+ */
 
 int _strlen(char *s)
-
 {
 
 		int i;
