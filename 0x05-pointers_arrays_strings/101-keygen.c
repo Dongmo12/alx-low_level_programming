@@ -1,9 +1,5 @@
 #include "holberton.h"
 
-#include <stdlib.h>
-
-#include <time.h>
-
 /**
  * main - random password generator for 101-crackme
  *
