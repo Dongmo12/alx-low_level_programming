@@ -5,11 +5,13 @@
  * @s: String to be reversed
  * Return: Always 0.
  */
-void rev_string(char *s) {
+
+void rev_string(char *s)
+{
   int i, j;
   char temp;
-
   i = 0;
+  
   while (s[i] != '\0')
     i++;
 
