@@ -3,7 +3,6 @@
 
 
 /**
- *
  *  * swap_int - check the code for Holberton School students.
  *
  *   * @a: First variable to be swapped
@@ -15,7 +14,6 @@
  */
 
 void swap_int(int *a, int *b)
-
 {
 
 		int temp;
